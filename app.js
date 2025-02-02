@@ -325,7 +325,7 @@ const Portfolio = () => {
           React.createElement(
             'a',
             {
-              href: 'mailto:your.email@example.com',
+              href: 'mailto:jafari.nariman@gmail.com',
               className: 'text-gray-600 hover:text-gray-900'
             },
             React.createElement(Icons.Mail, { className: 'w-6 h-6' })
