@@ -312,4 +312,32 @@ const Portfolio = () => {
               href: 'https://github.com/snowholt',
               className: 'hover:opacity-80 transition-opacity'
             },
-            React.createElement(Icons.Github, { className: 'w-8
+            React.createElement(Icons.Github, { className: 'w-8 h-8' })
+            ),
+          React.createElement(
+            'a',
+            {
+              href: 'https://www.linkedin.com/in/narimanjafari/',
+              className: 'hover:opacity-80 transition-opacity'
+            },
+            React.createElement(Icons.Linkedin, { className: 'w-8 h-8' })
+          ),
+          React.createElement(
+            'a',
+            {
+              href: 'mailto:your.email@example.com',
+              className: 'hover:opacity-80 transition-opacity'
+            },
+            React.createElement(Icons.Mail, { className: 'w-8 h-8' })
+          )
+        )
+      )
+    )
+  );
+};
+
+// Mount the app
+ReactDOM.render(
+  React.createElement(Portfolio),
+  document.getElementById('root')
+);
