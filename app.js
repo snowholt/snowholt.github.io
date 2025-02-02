@@ -108,7 +108,7 @@ const Portfolio = () => {
       description: "IoT project utilizing ESP32 microcontroller for weather monitoring and data collection",
       tech: ["C++", "Arduino", "IoT", "Hardware"],
       link: "https://github.com/snowholt/EPS32-Weather"
-    },   
+    },
     {
       title: "Fitbit User Preferences Analysis",
       description: "Analysis of smart device fitness data to derive user behavior insights",
@@ -116,19 +116,17 @@ const Portfolio = () => {
       link: "https://www.kaggle.com/code/snowholt/insights-into-user-preferences-of-fitbit-features"
     },
     {
-      title: "YouTube Data Analysis",
-      description: "Comprehensive analysis of YouTube comments and video metrics using Python",
-      tech: ["Python", "Data Analysis", "NLP"],
-      link: "https://www.linkedin.com/pulse/text-data-analysis-python-youtube-case-study-nariman-jafarieshlaghi"
-    },
-    {
       title: "COVID-19 Pandemic Analysis",
       description: "Comprehensive SQL analysis of COVID-19 dataset to understand the pandemic's global impact and regional patterns",
       tech: ["SQL", "Data Analysis", "Excel", "Statistics"],
       link: "https://www.linkedin.com/pulse/covid-pandemic-analysis-using-sql-nariman-jafarieshlaghi/"
+    },  
+    {
+      title: "YouTube Data Analysis",
+      description: "Comprehensive analysis of YouTube comments and video metrics using Python",
+      tech: ["Python", "Data Analysis", "NLP"],
+      link: "https://www.linkedin.com/pulse/text-data-analysis-python-youtube-case-study-nariman-jafarieshlaghi"
     }
-    
-    
     
   ];
 
@@ -149,10 +147,39 @@ const Portfolio = () => {
         'div',
         { className: 'max-w-4xl mx-auto py-16 px-4' },
         React.createElement(
-          'h1',
-          { className: 'text-4xl font-bold mb-4' },
-          'Nariman Jafari'
-        ),
+          'div',
+          { className: 'flex flex-col md:flex-row items-center gap-8' },
+          React.createElement(
+            'div',
+            { className: 'relative' },
+            // Modern frame effect
+            React.createElement(
+              'div',
+              { 
+                className: 'w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative z-10',
+                style: {
+                  background: 'linear-gradient(45deg, #4F46E5, #3B82F6)'
+                }
+              },
+              React.createElement('img', {
+                src: 'images/profile.jpg',
+                alt: 'Nariman Jafari',
+                className: 'w-full h-full object-cover'
+              })
+            ),
+            // Decorative background element
+            React.createElement('div', {
+              className: 'absolute -bottom-2 -right-2 w-48 h-48 rounded-full bg-blue-100 z-0'
+            })
+          ),
+          React.createElement(
+            'div',
+            null,
+            React.createElement(
+              'h1',
+              { className: 'text-4xl font-bold mb-4' },
+              'Nariman Jafari'
+            ),
         React.createElement(
           'p',
           { className: 'text-xl text-gray-600 mb-6' },
