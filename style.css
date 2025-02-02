@@ -1,11 +1,92 @@
-/* Custom styles */
+/* Base styles */
 body {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Add any custom animations or overrides here */
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Transitions */
 .transition-shadow {
     transition: box-shadow 0.3s ease;
+}
+
+/* Project card hover effect */
+.hover\:shadow-md:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Skill tags hover effect */
+.bg-gray-100:hover {
+    background-color: #e5e7eb;
+}
+
+/* Tech stack tags hover effect */
+.bg-blue-50:hover {
+    background-color: #eff6ff;
+}
+
+/* Social icons hover effect */
+.text-gray-600:hover {
+    color: #1a202c;
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in animation to sections */
+section {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Ensure images don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        color: black;
+    }
+    a {
+        text-decoration: underline;
+        color: black;
+    }
+    .no-print {
+        display: none;
+    }
 }
