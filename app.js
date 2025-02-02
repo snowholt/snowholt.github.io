@@ -98,22 +98,22 @@ const Icons = {
 const Portfolio = () => {
   const projects = [
     {
-      title: "COVID-19 Pandemic Analysis",
-      description: "Comprehensive SQL analysis of COVID-19 dataset to understand the pandemic's global impact and regional patterns",
-      tech: ["SQL", "Data Analysis", "Excel", "Statistics"],
-      link: "https://www.linkedin.com/pulse/covid-pandemic-analysis-using-sql-nariman-jafarieshlaghi/"
+      title: "LLM Platform",
+      description: "Advanced platform leveraging Large Language Models for various applications",
+      tech: ["Python", "ML", "AI"],
+      link: "https://github.com/snowholt/LLMPlatform"
     },
     {
       title: "ESP32 Weather Station",
       description: "IoT project utilizing ESP32 microcontroller for weather monitoring and data collection",
       tech: ["C++", "Arduino", "IoT", "Hardware"],
       link: "https://github.com/snowholt/EPS32-Weather"
-    },
+    },   
     {
-      title: "LLM Platform",
-      description: "Advanced platform leveraging Large Language Models for various applications",
-      tech: ["Python", "ML", "AI"],
-      link: "https://github.com/snowholt/LLMPlatform"
+      title: "Fitbit User Preferences Analysis",
+      description: "Analysis of smart device fitness data to derive user behavior insights",
+      tech: ["Data Analysis", "Statistics", "Visualization"],
+      link: "https://www.kaggle.com/code/snowholt/insights-into-user-preferences-of-fitbit-features"
     },
     {
       title: "YouTube Data Analysis",
@@ -122,11 +122,14 @@ const Portfolio = () => {
       link: "https://www.linkedin.com/pulse/text-data-analysis-python-youtube-case-study-nariman-jafarieshlaghi"
     },
     {
-      title: "Fitbit User Preferences Analysis",
-      description: "Analysis of smart device fitness data to derive user behavior insights",
-      tech: ["Data Analysis", "Statistics", "Visualization"],
-      link: "https://www.kaggle.com/code/snowholt/insights-into-user-preferences-of-fitbit-features"
+      title: "COVID-19 Pandemic Analysis",
+      description: "Comprehensive SQL analysis of COVID-19 dataset to understand the pandemic's global impact and regional patterns",
+      tech: ["SQL", "Data Analysis", "Excel", "Statistics"],
+      link: "https://www.linkedin.com/pulse/covid-pandemic-analysis-using-sql-nariman-jafarieshlaghi/"
     }
+    
+    
+    
   ];
 
   const skills = [
