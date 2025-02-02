@@ -90,3 +90,28 @@ img {
         display: none;
     }
 }
+
+/* Profile image effects */
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Gradient animation */
+@keyframes gradientRotate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Add subtle hover effect */
+.profile-image:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
