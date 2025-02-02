@@ -162,7 +162,7 @@ const Portfolio = () => {
                 }
               },
               React.createElement('img', {
-                src: 'images/profile.jpg',
+                src: 'images/me.jpg',
                 alt: 'Nariman Jafari',
                 className: 'w-full h-full object-cover'
               })
