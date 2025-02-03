@@ -109,8 +109,9 @@ const Portfolio = () => {
   ];
 
   const skills = [
-    "Python", "SQL", "Excel", "C++", "React Native", "ML", "AI", 
-    "Data Analysis", "Electronic", "Telecommunication", "Arduino", 
+    "Python", "C++","SQL", "R","Excel",  "React Native", 
+    "ML", "AI", "Data Analysis", "Power BI", "Tableau",
+    "Git", "Electronic", "Telecommunication", "Arduino", 
     "IoT", "Linux", "Database Management"
   ];
 
