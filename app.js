@@ -383,7 +383,7 @@ I blend AI sorcery, data magic, and full-stack finesse to craft intelligent syst
                 </a>
               </div>
               <div className="mt-10 text-sm text-gray-500 text-center">
-                <p>Nariman Jafari • AI Integration Developer • she/her</p>
+                <p>Nariman Jafari • AI Integration Developer </p>
                 <p className="mt-1">© 2025 • Montreal, QC, Canada</p>
               </div>
             </section>
