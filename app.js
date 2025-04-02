@@ -5,6 +5,12 @@ const Portfolio = () => {
   // Projects data
   const projects = [
     {
+      title: "Soft Pink Theme for VS Code",
+      description: "A beautifully crafted VS Code theme designed with a feminine aesthetic, providing a soft and calming color palette for coding",
+      tech: ["JavaScript", "TypeScript", "VS Code API", "UI/UX"],
+      link: "https://github.com/snowholt/pinkTheme"
+    },
+    {
       title: "LLM Platform",
       description: "Advanced platform leveraging Large Language Models for various applications",
       tech: ["Python", "ML", "AI"],
