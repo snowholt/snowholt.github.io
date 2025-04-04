@@ -147,7 +147,7 @@ const Portfolio = () => {
               <div 
                 className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative z-10"
                 style={{
-                  background: 'linear-gradient(45deg, #FF69B4, #DA70D6)'
+                  background: 'linear-gradient(45deg, #2563EB, #3B82F6)'
                 }}
               >
                 <img 
@@ -156,18 +156,17 @@ const Portfolio = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-2 -right-2 w-48 h-48 rounded-full bg-purple-100 z-0"></div>
+              <div className="absolute -bottom-2 -right-2 w-48 h-48 rounded-full bg-blue-100 z-0"></div>
             </div>
 
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl font-bold mb-2 text-gray-800">Nariman Jafari</h1>
-              <p className="text-xl text-pink-600 mb-3 font-medium">
+              <p className="text-xl text-blue-600 mb-3 font-medium">
                 AI Integration Developer | Data Analyst | Full Stack Developer
               </p>
-              <p className="text-gray-600 mb-6 italic">
-              Embracing my inner glow, I find serenity on this winding path.
-Like sparks dancing from a gentle flame, each of us seeks our own salvation.
-In the fusion of understanding and peace, our hearts ignite a shared radiance... ✨"
+              <p className="text-gray-600 mb-6">
+                Software developer with expertise in AI integration, data analysis, and full-stack development. 
+                Focused on delivering innovative solutions through technical excellence and strategic thinking.
               </p>
             </div>
           </div>
