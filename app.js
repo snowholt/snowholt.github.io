@@ -192,7 +192,7 @@ const Portfolio = () => {
       </div>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto h-0.5 bg-gradient-to-r from-blue-100 via-blue-300 to-blue-100 rounded-full mb-8"></div>
+      <div className="max-w-5xl mx-auto h-0.5 bg-gradient-to-r from-gray-200 via-gray-400 to-gray-200 rounded-full mb-8"></div>
 
       {/* Content Sections */}
       <div className="max-w-5xl mx-auto px-4 pb-16">
