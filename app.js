@@ -200,20 +200,20 @@ const Portfolio = () => {
         {activeTab === 'about' && (
           <div className={contentClass}>
             <section className="bg-white rounded-xl shadow-sm p-8 mb-2">
-              <h2 className="text-3xl font-bold mb-8 text-center text-pink-600">My Story</h2>
+              <h2 className="text-3xl font-bold mb-8 text-center text-blue-600">My Profile</h2>
               
               {/* Full width description */}
               <div className="mb-6">
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                <span className="font-bold italic text-lg font-serif text-pink-600">Not Your Average Techie – I'm a Code Enchantress! </span>
+                <span className="font-bold text-lg text-blue-600">Professional Software Developer </span>
 
-I blend AI sorcery, data magic, and full-stack finesse to craft intelligent systems that flirt with innovation. Whether I'm predicting trends or conjuring scalable backend spells, I add a dash of sass and a wink of whimsy to every project. Ready to stir up some tech mischief and create solutions that leave a lasting impression? Let's make some magic together!
+Experienced developer specializing in AI integration, data analytics, and full-stack development. I leverage technical expertise to build intelligent systems that solve complex problems and drive innovation. With a methodical approach to software design and implementation, I deliver scalable solutions that meet business requirements and enhance user experience.
                 </p>
               </div>
               
               {/* Technical Skills */}
               <div className="mb-8">
-                <h3 className="font-semibold mb-4 text-purple-700">Technical Skills</h3>
+                <h3 className="font-semibold mb-4 text-blue-600">Technical Skills</h3>
                 <div className="flex flex-wrap gap-3">
                   {coreSkills.map((skill, index) => (
                     <span
@@ -231,7 +231,7 @@ I blend AI sorcery, data magic, and full-stack finesse to craft intelligent syst
               {/* Two column layout for Education and Languages */}
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="font-semibold mb-2 text-purple-700">Education</h3>
+                  <h3 className="font-semibold mb-2 text-blue-600">Education</h3>
                   <ul className="space-y-2 text-gray-600">
                     <li className="flex items-center">
                       <span className="mr-2">🎓</span>
@@ -248,7 +248,7 @@ I blend AI sorcery, data magic, and full-stack finesse to craft intelligent syst
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2 text-purple-700">Languages</h3>
+                  <h3 className="font-semibold mb-2 text-blue-600">Languages</h3>
                   <p className="text-gray-600">English, French, Persian</p>
                 </div>
               </div>
