@@ -100,28 +100,28 @@ const Portfolio = () => {
 
   // Core skills with icons
   const coreSkills = [
-    { name: "AI & ML", icon: "🧠", color: "#FF69B4" },
+    { name: "AI & ML", icon: "🧠", color: "#2563EB" },
     { name: "Python", icon: "🐍", color: "#3776AB" },
-    { name: "Data Analysis", icon: "📊", color: "#4CAF50" },
+    { name: "Data Analysis", icon: "📊", color: "#2E7D32" },
     { name: "C++", icon: "⚙️", color: "#00599C" },
     { name: "SQL", icon: "🗄️", color: "#4479A1" },
     { name: "R", icon: "📈", color: "#276DC3" },
     { name: "Excel", icon: "📑", color: "#217346" },
     { name: "Power BI", icon: "📉", color: "#F2C811" },
     { name: "Tableau", icon: "📋", color: "#E97627" },
-    { name: "IoT", icon: "🌐", color: "#00BCD4" },
+    { name: "IoT", icon: "🌐", color: "#0277BD" },
     { name: "Git", icon: "🔄", color: "#F05032" },
-    { name: "Linux", icon: "🐧", color: "#FFC107" }
+    { name: "Linux", icon: "🐧", color: "#333333" }
   ];
   
   // Tab animation classes
   const getTabClasses = (tabName) => {
-    const baseClasses = "py-3 px-6 rounded-full text-sm font-medium transition-all duration-300 flex items-center shadow-sm mx-1";
+    const baseClasses = "py-3 px-6 rounded-md text-sm font-medium transition-all duration-300 flex items-center shadow-sm mx-1";
     
     if (tabName === activeTab) {
-      return `${baseClasses} bg-white text-blue-600 shadow-md transform -translate-y-1 scale-105 z-10 border-2 border-blue-300`;
+      return `${baseClasses} bg-white text-blue-700 shadow-md transform -translate-y-1 scale-105 z-10 border border-gray-300`;
     } else {
-      return `${baseClasses} bg-blue-50 text-gray-600 hover:bg-white hover:-translate-y-0.5 hover:text-blue-500`;
+      return `${baseClasses} bg-gray-50 text-gray-600 hover:bg-white hover:-translate-y-0.5 hover:text-blue-600`;
     }
   };
   
@@ -192,7 +192,7 @@ const Portfolio = () => {
       </div>
 
       {/* Divider */}
-      <div className="max-w-5xl mx-auto h-0.5 bg-gradient-to-r from-pink-200 via-purple-300 to-pink-200 rounded-full mb-8"></div>
+      <div className="max-w-5xl mx-auto h-0.5 bg-gradient-to-r from-blue-100 via-blue-300 to-blue-100 rounded-full mb-8"></div>
 
       {/* Content Sections */}
       <div className="max-w-5xl mx-auto px-4 pb-16">
