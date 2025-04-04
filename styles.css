@@ -23,17 +23,17 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f3e5f5;
+  background: #f1f1f1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e1bee7;
+  background: #d1d1d1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ce93d8;
+  background: #a0a0a0;
 }
 
 /* Smooth transitions for all elements */
@@ -41,7 +41,7 @@
   transition: color 0.3s, background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Tab hover effect - slight pulse */
+/* Tab hover effect - subtle */
 button:hover {
   animation: pulse 0.5s;
 }
@@ -51,7 +51,7 @@ button:hover {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   100% {
     transform: scale(1);
@@ -68,6 +68,6 @@ button:hover {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
   }
 }

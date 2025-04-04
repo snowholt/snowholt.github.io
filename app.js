@@ -5,8 +5,8 @@ const Portfolio = () => {
   // Projects data
   const projects = [
     {
-      title: "Soft Pink Theme for VS Code",
-      description: "A beautifully crafted VS Code theme designed with a feminine aesthetic, providing a soft and calming color palette for coding",
+      title: "Professional VS Code Theme",
+      description: "A professionally crafted VS Code theme designed with a clean aesthetic, providing a focused and distraction-free color palette for coding",
       tech: ["JavaScript", "TypeScript", "VS Code API", "UI/UX"],
       link: "https://github.com/snowholt/pinkTheme"
     },
@@ -119,9 +119,9 @@ const Portfolio = () => {
     const baseClasses = "py-3 px-6 rounded-full text-sm font-medium transition-all duration-300 flex items-center shadow-sm mx-1";
     
     if (tabName === activeTab) {
-      return `${baseClasses} bg-white text-pink-600 shadow-md transform -translate-y-1 scale-105 z-10 border-2 border-pink-300`;
+      return `${baseClasses} bg-white text-blue-600 shadow-md transform -translate-y-1 scale-105 z-10 border-2 border-blue-300`;
     } else {
-      return `${baseClasses} bg-blue-50 text-gray-600 hover:bg-white hover:-translate-y-0.5 hover:text-pink-500`;
+      return `${baseClasses} bg-blue-50 text-gray-600 hover:bg-white hover:-translate-y-0.5 hover:text-blue-500`;
     }
   };
   
@@ -130,9 +130,9 @@ const Portfolio = () => {
   
   // Define tabs
   const tabs = [
-    { id: 'about', name: 'My Story', icon: '💁‍♀️' },
+    { id: 'about', name: 'About Me', icon: '👤' },
     { id: 'experience', name: 'Experience', icon: '💼' },
-    { id: 'projects', name: 'Projects', icon: '✨' },
+    { id: 'projects', name: 'Projects', icon: '💻' },
     { id: 'certifications', name: 'Certifications', icon: '🏆' },
     { id: 'contact', name: 'Contact', icon: '📧' }
   ];
