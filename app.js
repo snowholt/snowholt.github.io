@@ -1,9 +1,15 @@
 const Portfolio = () => {
   // State for active tab
   const [activeTab, setActiveTab] = React.useState('about');
-  
+
   // Projects data
   const projects = [
+    { // <-- NEW PROJECT ADDED HERE
+      title: "Chefbelle: Your Interactive AI Kitchen Assistant",
+      description: "AI-powered kitchen assistant using existing ingredients, nutritional data, voice commands, and LangGraph for complex flows. Reduces food waste and simplifies cooking. (Google Capstone Project)",
+      tech: ["Python", "GenAI", "Gemini", "LangGraph", "ChromaDB", "SQLite", "RAG", "Function Calling", "Audio Understanding", "Pandas"],
+      link: "https://github.com/snowholt/chefbelle"
+    },
     {
       title: "Professional VS Code Theme",
       description: "A professionally crafted VS Code theme designed with a clean aesthetic, providing a focused and distraction-free color palette for coding",
@@ -113,21 +119,21 @@ const Portfolio = () => {
     { name: "Git", icon: "🔄", color: "#F05032" },
     { name: "Linux", icon: "🐧", color: "#333333" }
   ];
-  
+
   // Tab animation classes
   const getTabClasses = (tabName) => {
     const baseClasses = "py-3 px-6 rounded-md text-sm font-medium transition-all duration-300 flex items-center shadow-sm mx-1";
-    
+
     if (tabName === activeTab) {
       return `${baseClasses} bg-white text-blue-700 shadow-md transform -translate-y-1 scale-105 z-10 border border-gray-300`;
     } else {
       return `${baseClasses} bg-gray-50 text-gray-600 hover:bg-white hover:-translate-y-0.5 hover:text-blue-600`;
     }
   };
-  
+
   // Content animation class
   const contentClass = "animate-fadeIn";
-  
+
   // Define tabs
   const tabs = [
     { id: 'about', name: 'About Me', icon: '👤' },
@@ -144,15 +150,15 @@ const Portfolio = () => {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="relative">
-              <div 
+              <div
                 className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative z-10"
                 style={{
                   background: 'linear-gradient(45deg, #1F2937, #4B5563)'
                 }}
               >
-                <img 
-                  src="images/profile.jpg" 
-                  alt="Nariman Jafari" 
+                <img
+                  src="images/profile.jpg"
+                  alt="Nariman Jafari"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -165,7 +171,7 @@ const Portfolio = () => {
                 AI Integration Developer | Data Analyst | Full Stack Developer
               </p>
               <p className="text-gray-600 mb-6">
-                Software developer with expertise in AI integration, data analysis, and full-stack development. 
+                Software developer with expertise in AI integration, data analysis, and full-stack development.
                 Focused on delivering innovative solutions through technical excellence and strategic thinking.
               </p>
             </div>
@@ -201,7 +207,7 @@ const Portfolio = () => {
           <div className={contentClass}>
             <section className="bg-white rounded-xl shadow-sm p-8 mb-2">
               <h2 className="text-3xl font-bold mb-8 text-center text-blue-600">My Profile</h2>
-              
+
               {/* Full width description */}
               <div className="mb-6">
                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -210,7 +216,7 @@ const Portfolio = () => {
 Experienced developer specializing in AI integration, data analytics, and full-stack development. I leverage technical expertise to build intelligent systems that solve complex problems and drive innovation. With a methodical approach to software design and implementation, I deliver scalable solutions that meet business requirements and enhance user experience.
                 </p>
               </div>
-              
+
               {/* Technical Skills */}
               <div className="mb-8">
                 <h3 className="font-semibold mb-4 text-blue-600">Technical Skills</h3>
@@ -227,7 +233,7 @@ Experienced developer specializing in AI integration, data analytics, and full-s
                   ))}
                 </div>
               </div>
-              
+
               {/* Two column layout for Education and Languages */}
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
@@ -263,8 +269,8 @@ Experienced developer specializing in AI integration, data analytics, and full-s
               <h2 className="text-3xl font-bold mb-8 text-center text-blue-700">Experience</h2>
               <div className="space-y-6">
                 {experiences.map((exp, index) => (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 border-blue-400 transform hover:-translate-y-1 transition-transform"
                   >
                     <h3 className="text-xl font-semibold text-blue-700 mb-1">{exp.title}</h3>
@@ -304,7 +310,7 @@ Experienced developer specializing in AI integration, data analytics, and full-s
                       href={project.link}
                       className="inline-flex items-center text-blue-600 hover:text-blue-800"
                     >
-                      View Project 
+                      View Project
                       <svg className="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                         <polyline points="15 3 21 3 21 9"></polyline>
@@ -356,7 +362,7 @@ Experienced developer specializing in AI integration, data analytics, and full-s
               <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">Get in Touch</h2>
               <div className="mb-8 text-center">
                 <p className="text-gray-600 mb-6">Let's collaborate on innovative tech solutions!</p>
-                <a 
+                <a
                   href="mailto:jafari.nariman@gmail.com"
                   className="inline-block py-3 px-8 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-md shadow-md hover:shadow-lg transition-shadow transform hover:scale-102 transition-transform"
                 >
