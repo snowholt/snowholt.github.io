@@ -1,5 +1,39 @@
 /* Custom styles for portfolio */
 
+/* Theme variables */
+:root {
+  /* Light theme (default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #374151;
+  --text-secondary: #4b5563;
+  --accent: #3b82f6;
+  --border: #e5e7eb;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Dark theme */
+.dark-theme {
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --text-primary: #f9fafb;
+  --text-secondary: #e5e7eb;
+  --accent: #60a5fa;
+  --border: #374151;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Pink theme */
+.pink-theme {
+  --bg-primary: #fdf2f8;
+  --bg-secondary: #fce7f3;
+  --text-primary: #831843;
+  --text-secondary: #9d174d;
+  --accent: #db2777;
+  --border: #fbcfe8;
+  --shadow: 0 1px 3px rgba(219,39,119,0.1);
+}
+
 /* Animation for tab content transitions */
 @keyframes fadeIn {
   from {
@@ -59,6 +93,95 @@ button:hover {
 }
 
 /* Skill tag animation */
+
+/* Theme toggler styles */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle button {
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+/* Code Enchantress text for pink theme */
+.code-enchantress {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.code-enchantress:hover {
+  text-shadow: 0 0 5px rgba(219, 39, 119, 0.3);
+}
+
+.code-enchantress::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #db2777;
+  transition: width 0.3s ease;
+}
+
+.code-enchantress:hover::after {
+  width: 100%;
+}
+
+/* Magic sparkle cursor effect */
+.code-enchantress:hover::before {
+  content: '✨';
+  position: absolute;
+  font-size: 12px;
+  top: 0;
+  right: -15px;
+  animation: sparkle 1s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* Pink theme background pattern */
+.floral-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 50 C55 45, 55 35, 50 30 C45 35, 35 35, 30 30 C35 25, 35 15, 30 10 C25 15, 15 15, 10 10 C15 5, 15 -5, 10 -10' stroke='%23fbcfe8' fill='none' stroke-width='0.5'/%3E%3C/svg%3E");
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.pink-theme .floral-bg {
+  opacity: 0.2;
+}
 .flex-wrap span:hover {
   animation: slight-lift 0.3s;
 }
@@ -69,5 +192,57 @@ button:hover {
   }
   50% {
     transform: translateY(-2px);
+  }
+}
+
+/* Theme transition effects */
+body {
+  transition: background-color 1.2s ease, color 1.2s ease;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 30%, rgba(251, 207, 232, 0) 70%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
+}
+
+.pink-theme::before {
+  opacity: 0.4;
+  background: radial-gradient(circle at center, rgba(251, 207, 232, 0.2) 30%, transparent 70%);
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.2;
+  }
+}
+
+/* Magic sparkle animation */
+@keyframes magic-sparkle {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) rotate(360deg);
   }
 }
