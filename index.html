@@ -1,36 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nariman Jafari — Full-Stack Developer &amp; AI Engineer</title>
-    <meta name="description" content="Full-Stack Developer and AI Engineer building production AI-powered platforms, real-time voice systems, and scalable web applications. FastAPI, React, PostgreSQL, LLM pipelines.">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8W6DFV6J01"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nariman Jafari — Full-Stack &amp; AI Engineer</title>
+<meta name="description" content="Full-stack and AI engineer in Montréal. I build production platforms: AI therapy and provider booking, transaction authorization, French exam certification, real-time voice. Python, TypeScript, FastAPI, Next.js, PostgreSQL.">
+<meta name="author" content="Nariman Jafari Eshlaghi">
+<link rel="canonical" href="https://snowholt.github.io/">
 
-      gtag('config', 'G-8W6DFV6J01');
-    </script>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- TailwindCSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nariman Jafari — Full-Stack &amp; AI Engineer">
+<meta property="og:description" content="Production platforms in healthcare AI, security, edtech and real-time voice. Montréal, QC.">
+<meta property="og:url" content="https://snowholt.github.io/">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8W6DFV6J01"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8W6DFV6J01');
+</script>
+
+<!-- Set the saved theme before first paint, so there is no flash -->
+<script>
+  (function(){
+    try{
+      var t = localStorage.getItem('theme');
+      if(t) document.documentElement.setAttribute('data-theme', t);
+      else if(window.matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.setAttribute('data-theme','dark');
+    }catch(e){}
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter+Tight:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    <!-- React Development version for better error messages -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <!-- Babel for JSX transformation -->
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <!-- App -->
-    <script src="app.js" type="text/babel"></script>
+
+<a class="skip" href="#work">Skip to work</a>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <a class="wordmark" href="#top">NARIMAN JAFARI<sup>/ ENG</sup></a>
+    <span class="spacer"></span>
+    <nav aria-label="Sections">
+      <a href="#work">work</a>
+      <a href="#open-source">open source</a>
+      <a href="#experience">experience</a>
+      <a href="#stack">stack</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-live="polite">Night</button>
+  </header>
+
+  <!-- ── HERO ─────────────────────────────────────────────────────────── -->
+  <main id="top">
+  <section class="sheet hero">
+    <div class="ticks" aria-hidden="true"><span>00</span><span>10</span><span>20</span><span>30</span><span>40</span></div>
+    <p class="entry-no">Entry 001 <span>— Montréal, QC · full-stack &amp; AI engineering</span></p>
+    <h1>I build platforms<br>that handle <mark>real</mark><br>consequences.</h1>
+    <p class="lede">Six platforms I have built — <b>AI therapy and provider booking</b>, transaction authorization, French exam certification, real-time voice. I work across the backend, the interface, and the infrastructure underneath.</p>
+    <p class="annotation"><b>note —</b> every client platform shipped after a security hardening pass: access control, session and token handling, encryption at rest, audit trails, secrets management.</p>
+    <div class="hero-actions">
+      <a class="btn btn--fill" href="#work">Open the record →</a>
+      <a class="btn" href="https://github.com/snowholt">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/narimanjafari/">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- ── SECTION A — PRODUCTION WORK ──────────────────────────────────── -->
+  <section class="section" id="work">
+    <div class="section-head">
+      <span class="tab">Section A</span>
+      <h2>&nbsp;Production work</h2>
+      <span class="spacer"></span>
+      <span class="count">06 records</span>
+    </div>
+    <p class="section-note"><b>note —</b> these are client and employer platforms, so they are described by what they do and what I owned, not by their internals. The technologies I work with are listed in <a href="#stack">Section E</a>.</p>
+
+    <article class="sheet record" style="margin-top:20px">
+      <div class="record-head">
+        <div>
+          <p class="kind">Security platform · lead engineer</p>
+          <h3>GuardX-IQ</h3>
+        </div>
+        <span class="stamp">In production</span>
+      </div>
+      <p class="summary">A multi-tenant authorization platform for businesses that need a second, out-of-band confirmation before a transaction goes through. I designed and built the service, the web console, and the companion mobile authenticator that pairs with it.</p>
+      <ul class="owned">
+        <li>Backend service and API design</li>
+        <li>Web console for operators and administrators</li>
+        <li>Companion mobile authenticator application</li>
+        <li>Tenant isolation and access-control model</li>
+        <li>Containerized deployment behind a managed edge</li>
+        <li>Threat modelling, security review, and remediation</li>
+      </ul>
+    </article>
+
+    <article class="sheet record">
+      <div class="record-head">
+        <div>
+          <p class="kind">Healthcare AI · AI integration &amp; full-stack developer</p>
+          <h3><a href="https://bahaam.com">Bahaam ↗</a></h3>
+        </div>
+        <span class="stamp">In production</span>
+      </div>
+      <p class="summary">A bilingual platform pairing an <b>AI companion for trauma-informed emotional support</b> with a full booking marketplace connecting clients and licensed providers. Three distinct roles — clients, providers, administrators — each with their own workflows and boundaries.</p>
+      <ul class="owned">
+        <li>Trauma-aware conversational workflows with crisis safeguards</li>
+        <li>Anonymous and federated sign-in, session and role management</li>
+        <li>Farsi/English experience with full right-to-left support</li>
+        <li>Subscription billing, provider scheduling, calendar and video flows</li>
+        <li>Security hardening across critical and high-severity findings</li>
+        <li>Production deployment, monitoring, backup and recovery</li>
+      </ul>
+    </article>
+
+    <article class="sheet record">
+      <div class="record-head">
+        <div>
+          <p class="kind">EdTech · College 2B</p>
+          <h3>TCF Exam Platform</h3>
+        </div>
+        <span class="stamp">In production</span>
+      </div>
+      <p class="summary">Preparation for the French TCF and TEF examinations, built for people going through <b>Quebec immigration</b>. Timed reading, listening and writing sections, with progress tracking and results across a full course catalogue.</p>
+      <ul class="owned">
+        <li>Backend for authentication, exam delivery, attempts and scoring</li>
+        <li>AI-assisted evaluation of written French, scored against TCF criteria</li>
+        <li>Course management, flashcards, study materials and admin tooling</li>
+        <li>Payments, coupons, subscriptions and product administration</li>
+        <li>Security remediation across auth, payments, uploads and rendering</li>
+        <li>Deployment, database migrations and secrets rotation</li>
+      </ul>
+    </article>
+
+    <article class="sheet record">
+      <div class="record-head">
+        <div>
+          <p class="kind">Real estate AI · full-stack developer</p>
+          <h3><a href="https://dakeh.ca">Open-House AI ↗</a></h3>
+        </div>
+        <span class="stamp">Live</span>
+      </div>
+      <p class="summary">An AI companion for real-estate open houses. An agent prepares a listing; a visitor opens the page on their phone and asks the home anything, by voice or text. Answers come <b>only</b> from published, human-reviewed material — anything outside that gets an honest "ask the agent" rather than a guess.</p>
+      <ul class="owned">
+        <li>Listing synchronization and media pipeline</li>
+        <li>Vision and document analysis for listing preparation</li>
+        <li>Human review gate — nothing reaches the public unreviewed</li>
+        <li>Realtime voice and text assistant for visitors</li>
+        <li>Agent dashboard and the public visitor experience</li>
+      </ul>
+    </article>
+
+    <article class="sheet record">
+      <div class="record-head">
+        <div>
+          <p class="kind">Voice AI platform · freelance, sole developer</p>
+          <h3>BeautyAI</h3>
+        </div>
+        <span class="stamp">2025 – 2026</span>
+      </div>
+      <p class="summary">A real-time multilingual voice assistant for customer service, built end to end on my own: <b>speech to text, a locally GPU-hosted language model, then speech synthesis</b>, streamed over WebRTC. Callers can interrupt mid-sentence and the conversation keeps up.</p>
+      <ul class="owned">
+        <li>The full low-latency voice loop, speech in to speech out</li>
+        <li>Interruption-aware turn taking with streaming and queued replies</li>
+        <li>Realtime transport and connection handling</li>
+        <li>Customer dashboard for voice, chat, messaging, billing and admin</li>
+        <li>Knowledge base with document processing and semantic search</li>
+        <li>Model management, performance monitoring and test coverage</li>
+      </ul>
+    </article>
+
+    <article class="sheet record">
+      <div class="record-head">
+        <div>
+          <p class="kind">Local-first AI · personal project</p>
+          <h3>Nina — Velvet Muse</h3>
+        </div>
+        <span class="stamp">v0.1.0</span>
+      </div>
+      <p class="summary">A multimodal chat application for a <b>fully offline model running on my own machine</b> — text, images and voice, streamed live. The browser never talks to the model directly; a server proxy owns the resource decisions the client shouldn't be trusted with.</p>
+      <ul class="owned">
+        <li>Typed streaming protocol separating reasoning from reply</li>
+        <li>Image and audio input, normalized before they reach the model</li>
+        <li>Markdown, mathematics and syntax-highlighted code rendering</li>
+        <li>Saved conversations with rename, switch and delete</li>
+        <li>A design system with distinct light and dark treatments</li>
+        <li>Motion that honours reduced-motion preferences throughout</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- ── SECTION B — OPEN SOURCE ──────────────────────────────────────── -->
+  <section class="section" id="open-source">
+    <div class="section-head">
+      <span class="tab">Section B</span>
+      <h2>&nbsp;Open source</h2>
+      <span class="spacer"></span>
+      <span class="count">14 repositories</span>
+    </div>
+    <p class="section-note"><b>note —</b> public repositories. The code is readable, and the technology is listed in full.</p>
+
+    <div class="cards">
+
+      <a class="card" href="https://github.com/snowholt/sdrpp-airband">
+        <p class="repo">snowholt/sdrpp-airband ↗</p>
+        <h3>SDR++ Airband</h3>
+        <p>Adaptive squelch and AM noise reduction for aviation airband listening, built on SDR++. Signal processing work on real, noisy radio.</p>
+        <div class="tags"><span>C++</span><span>DSP</span><span>SDR++</span><span>GPL-3.0</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/rtlangle">
+        <p class="repo">snowholt/rtlangle ↗</p>
+        <h3>rtlangle</h3>
+        <p>Measures how well an RTL-SDR receives airband transmissions as a function of dipole antenna orientation, and reports uncertainty-aware rankings rather than a single confident answer.</p>
+        <div class="tags"><span>C++</span><span>RTL-SDR</span><span>Statistics</span><span>Linux</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/chefbelle">
+        <p class="repo">snowholt/chefbelle ↗</p>
+        <h3>Chefbelle</h3>
+        <p>A stateful cooking agent that works out what you can make from what you have. Semantic recipe search, nutrition lookup and voice-guided cooking. Built for Google's Gen AI Intensive.</p>
+        <div class="tags"><span>Python</span><span>LangGraph</span><span>Gemini</span><span>ChromaDB</span><span>Whisper</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/Study-Planner">
+        <p class="repo">snowholt/Study-Planner ↗</p>
+        <h3>ADK Study Planner</h3>
+        <p>A multi-agent system that builds a personalized five-day study plan — separate planner, researcher and academic agents curating material from Arxiv and YouTube.</p>
+        <div class="tags"><span>Python</span><span>Google ADK</span><span>Gemini</span><span>FastAPI</span><span>React</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/smart-vision-gemma">
+        <p class="repo">snowholt/smart-vision-gemma ↗</p>
+        <h3>Smart Vision Gemma</h3>
+        <p>Real-time object detection and face analysis feeding a language model that narrates what the camera sees.</p>
+        <div class="tags"><span>Python</span><span>YOLOv8</span><span>Gemma</span><span>MediaPipe</span><span>OpenCV</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/Inteligent-PacMan">
+        <p class="repo">snowholt/Inteligent-PacMan ↗</p>
+        <h3>Intelligent Pac-Man</h3>
+        <p>An agent that plays Pac-Man with split responsibilities: local computer vision handles 30 FPS reflexes, a language model handles strategy.</p>
+        <div class="tags"><span>Python</span><span>OpenCV</span><span>Gemini</span><span>NumPy</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/ParticlePhysicsSimulation">
+        <p class="repo">snowholt/ParticlePhysicsSimulation ↗</p>
+        <h3>Particle Physics Simulation</h3>
+        <p>Thousands of interacting particles in real time, using AVX2 vector instructions and spatial hashing to keep the frame budget.</p>
+        <div class="tags"><span>C++</span><span>SIMD / AVX2</span><span>OpenGL</span><span>GLFW3</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/EPS32-Weather">
+        <p class="repo">snowholt/EPS32-Weather ↗</p>
+        <h3>ESP32 Weather Station</h3>
+        <p>Temperature, humidity and pressure logged on a microcontroller and served from a web server running on the board itself.</p>
+        <div class="tags"><span>C++</span><span>ESP32</span><span>PlatformIO</span><span>Sensors</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/vscodeinsiderDownloader">
+        <p class="repo">snowholt/vscodeinsiderDownloader ↗</p>
+        <h3>VS Code Insiders Updater</h3>
+        <p>A Linux updater for VS Code Insiders that shows release notes and asks before it installs, with GNOME dock integration.</p>
+        <div class="tags"><span>Python</span><span>Linux</span><span>GNOME</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/softwareTesting">
+        <p class="repo">snowholt/softwareTesting ↗</p>
+        <h3>Testing Framework Demo</h3>
+        <p>Unit, integration and system testing worked through on financial logic, with HTML reports and coverage.</p>
+        <div class="tags"><span>Python</span><span>Pytest</span><span>Coverage.py</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/pythonEnvAnalyzer">
+        <p class="repo">snowholt/pythonEnvAnalyzer ↗</p>
+        <h3>Python Environment Analyzer</h3>
+        <p>Analyzes Python environments and reports dependency inconsistencies across projects.</p>
+        <div class="tags"><span>Python</span><span>Shell</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/pinkTheme">
+        <p class="repo">snowholt/pinkTheme ↗</p>
+        <h3>Pink Theme for VS Code</h3>
+        <p>A colour theme for VS Code.</p>
+        <div class="tags"><span>JavaScript</span><span>VS Code</span><span>Colour</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/tankSimulation">
+        <p class="repo">snowholt/tankSimulation ↗</p>
+        <h3>Tank Simulation</h3>
+        <p>A tank simulation written in TypeScript.</p>
+        <div class="tags"><span>TypeScript</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/snowholt/DataAnalytics-Projects-Python">
+        <p class="repo">snowholt/DataAnalytics-Projects-Python ↗</p>
+        <h3>Data Analytics Projects</h3>
+        <p>Analysis and visualization worked through in three languages — companion repositories cover the same ground in R and SQL.</p>
+        <div class="tags"><span>Python</span><span>R</span><span>SQL</span><span>Pandas</span></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── SECTION C — PRIVATE INDEX ────────────────────────────────────── -->
+  <section class="section" id="index">
+    <div class="section-head">
+      <span class="tab">Section C</span>
+      <h2>&nbsp;Personal index</h2>
+      <span class="spacer"></span>
+      <span class="count">12 entries</span>
+    </div>
+    <p class="section-note"><b>note —</b> private repositories. Listed for the record; happy to walk through any of them in a conversation.</p>
+
+    <div class="sheet data-sheet table-scroll" style="margin-top:20px">
+      <table class="index-table">
+        <thead>
+          <tr><th scope="col">Project</th><th scope="col">What it does</th><th scope="col">Built with</th><th scope="col">Status</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">OANDA Quant MCP</td>
+            <td class="what">Read-only market-data and quant-analytics server: a causal feature engine, model-ready datasets, and point-in-time news and calendar enrichment.</td>
+            <td class="stack">Python · MCP · Pandas</td>
+            <td class="status">Active</td>
+          </tr>
+          <tr>
+            <td class="name">financialWavetrend</td>
+            <td class="what">Python port of four TradingView Pine indicators, with an explicit separation between lookahead-safe live signals and the future-leaking mode that reproduces the chart exactly.</td>
+            <td class="stack">Python · Pandas · Pine</td>
+            <td class="status">Active</td>
+          </tr>
+          <tr>
+            <td class="name">financialHarmonic</td>
+            <td class="what">Harmonic price-pattern detection over zigzag pivots, with pattern matching, filtering and plotting.</td>
+            <td class="stack">Python · MQL5 · NumPy</td>
+            <td class="status">Active</td>
+          </tr>
+          <tr>
+            <td class="name">Montreal Housing</td>
+            <td class="what">An 800,000-row scraped dataset of the Montreal rental market, cleaned and turned into an interactive dashboard covering price trends, neighbourhood demand and amenity effects.</td>
+            <td class="stack">Python · Pandas · Plotly</td>
+            <td class="status">Complete</td>
+          </tr>
+          <tr>
+            <td class="name">Video Downloader</td>
+            <td class="what">Desktop downloader with quality selection, live progress and cancellation, packaged as a Debian installer.</td>
+            <td class="stack">Python · PySide6 · yt-dlp</td>
+            <td class="status">v0.4.1</td>
+          </tr>
+          <tr>
+            <td class="name">Lumina Tabs</td>
+            <td class="what">A Chrome extension for tab management built around focus support — smart grouping, session snapshots, a focus mode, and encrypted local key storage.</td>
+            <td class="stack">TypeScript · React · Vite</td>
+            <td class="status">Complete</td>
+          </tr>
+          <tr>
+            <td class="name">Luminudge</td>
+            <td class="what">A calm Linux desktop companion for freelancers: task planning, focus sessions, learning trackers and an assistant that suggests the best next task.</td>
+            <td class="stack">Python · PySide6 · SQLite</td>
+            <td class="status">Complete</td>
+          </tr>
+          <tr>
+            <td class="name">Task Assistant</td>
+            <td class="what">A local operations utility — container control, tunnel management, log cleanup and API health checks behind one interface.</td>
+            <td class="stack">Python · PySide6 · Docker API</td>
+            <td class="status">Complete</td>
+          </tr>
+          <tr>
+            <td class="name">PostgreSQL Manager</td>
+            <td class="what">Desktop database management over direct or SSH-tunnelled connections, with schema browsing and record editing.</td>
+            <td class="stack">Python · PyQt5 · Paramiko</td>
+            <td class="status">Complete</td>
+          </tr>
+          <tr>
+            <td class="name">RTL-SDR Suite</td>
+            <td class="what">A modular web application for software-defined radio — FM and AM listening, satellite tracking and aircraft monitoring, all from the browser.</td>
+            <td class="stack">Python · FastAPI · React</td>
+            <td class="status">Complete</td>
+          </tr>
+          <tr>
+            <td class="name">Research Assistant</td>
+            <td class="what">A desktop client for working with several models at once, handling file attachments, image analysis, transcription and slide generation.</td>
+            <td class="stack">Python · PyQt5 · Whisper</td>
+            <td class="status">Complete</td>
+          </tr>
+          <tr>
+            <td class="name">LLM Platform</td>
+            <td class="what">A cross-platform mobile client giving one interface to several language models.</td>
+            <td class="stack">React Native · Expo · TypeScript</td>
+            <td class="status">Complete</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── SECTION D — EXPERIENCE ───────────────────────────────────────── -->
+  <section class="section" id="experience">
+    <div class="section-head">
+      <span class="tab">Section D</span>
+      <h2>&nbsp;Experience</h2>
+      <span class="spacer"></span>
+      <span class="count">2011 – present</span>
+    </div>
+
+    <div class="sheet" style="margin-top:20px">
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>AI Integration Developer / Full-Stack Developer</h3>
+            <p class="org">BaHaam · Montréal, QC</p>
+          </div>
+          <span class="period">Present</span>
+        </div>
+        <ul>
+          <li>Architecting a production-grade bilingual SaaS platform with secure backend services, AI-driven conversational workflows, and scalable deployment infrastructure</li>
+          <li>Building end-to-end features spanning authentication, real-time communication, billing integration, and admin operations</li>
+          <li>Leading security hardening across critical and high-severity findings, including access control, session handling, encryption of sensitive data, and disaster recovery</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>AI Integration Developer</h3>
+            <p class="org">College 2B · Montréal, QC</p>
+          </div>
+          <span class="period">Aug 2023 – Present</span>
+        </div>
+        <ul>
+          <li>Developing a full-stack educational platform with AI-assisted evaluation, secure authentication, and integrated payment processing</li>
+          <li>Building and hardening backend APIs for exam delivery, scoring, content management, and commerce workflows</li>
+          <li>Managing deployment and operations with containerized services, database migrations, and secrets management</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Freelance Full-Stack / GenAI Developer</h3>
+            <p class="org">BeautyAI · Montréal, QC</p>
+          </div>
+          <span class="period">Mar 2025 – Feb 2026</span>
+        </div>
+        <ul>
+          <li>Sole developer of an AI voice platform combining backend services with a customer dashboard for voice, chat, messaging, and billing workflows</li>
+          <li>Developed low-latency multilingual voice pipelines — speech recognition, a locally hosted language model on GPU, and speech synthesis over realtime transport</li>
+          <li>Implemented SaaS capabilities: authentication, subscription billing, semantic search over a knowledge base, and production monitoring</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Developer &amp; Technical Analyst</h3>
+            <p class="org">Ertebat Rahcom Iranian (HiWeb) · Tehran, Iran</p>
+          </div>
+          <span class="period">Aug 2020 – Aug 2023</span>
+        </div>
+        <ul>
+          <li>Developed Python scripts to automate technical and operational workflows across network and system environments</li>
+          <li>Performed network analysis and monitoring using SNMP across telecommunications infrastructure</li>
+          <li>Contributed to automation tooling to improve system efficiency and reduce manual intervention</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Telecommunication Engineer / Technical Analyst</h3>
+            <p class="org">ICCSSCO · Tehran, Iran</p>
+          </div>
+          <span class="period">Apr 2011 – Jun 2020</span>
+        </div>
+        <ul>
+          <li>Delivered technical support and engineering across telecommunications systems and network infrastructure</li>
+          <li>Transitioned from network-focused responsibilities toward software development and scripting automation</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>PHP Developer (Volunteer)</h3>
+            <p class="org">Cari St-Laurent · Montréal, QC</p>
+          </div>
+          <span class="period">Mar 2023 – Aug 2023</span>
+        </div>
+        <ul>
+          <li>Developed a cross-platform application for managing member data, and automated the analysis processes around it</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── SECTION E — STACK ────────────────────────────────────────────── -->
+  <section class="section" id="stack">
+    <div class="section-head">
+      <span class="tab">Section E</span>
+      <h2>&nbsp;Instruments</h2>
+      <span class="spacer"></span>
+      <span class="count">daily use</span>
+    </div>
+
+    <div class="sheet data-sheet" style="margin-top:20px">
+      <table class="data-table">
+        <tr><th scope="row">Languages</th><td>Python · TypeScript · JavaScript · SQL · C++ · C · R · Bash</td></tr>
+        <tr><th scope="row">AI &amp; ML</th><td>OpenAI · Google Gemini &amp; ADK · Hugging Face · LangGraph · RAG pipelines · Ollama · vLLM · llama.cpp · PyTorch · TensorFlow · Whisper · Edge TTS / XTTS · YOLOv8 · OpenCV · MediaPipe</td></tr>
+        <tr><th scope="row">Backend</th><td>FastAPI · Flask · Django · SQLAlchemy · SQLModel · Alembic · REST APIs · WebSocket · WebRTC</td></tr>
+        <tr><th scope="row">Frontend</th><td>Next.js · React · React Native · Expo · TypeScript · Tailwind CSS · shadcn/ui · Zustand · TanStack Query · i18next · Framer Motion · PySide6 · PyQt5</td></tr>
+        <tr><th scope="row">Data</th><td>PostgreSQL · Redis · pgvector · MySQL · SQLite · ChromaDB · S3 / MinIO · Pandas · NumPy</td></tr>
+        <tr><th scope="row">Infrastructure</th><td>Docker · Docker Compose · Linux · Nginx · Traefik · systemd · Prometheus · Grafana · Git · CI/CD · Debian packaging</td></tr>
+        <tr><th scope="row">Security</th><td>OWASP Top 10 · HIPAA safeguards · OIDC / OAuth · JWT · RBAC · MFA · AES-256-GCM · CSRF / CORS / CSP · audit logging · secrets management</td></tr>
+        <tr><th scope="row">Commerce</th><td>Stripe subscriptions, marketplace payouts, coupons, webhook idempotency</td></tr>
+        <tr><th scope="row">Analysis &amp; BI</th><td>Power BI · Tableau · Excel · Google Sheets · data visualization</td></tr>
+        <tr><th scope="row">Languages spoken</th><td>English · French · Persian</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── SECTION F — CREDENTIALS ──────────────────────────────────────── -->
+  <section class="section" id="credentials">
+    <div class="section-head">
+      <span class="tab">Section F</span>
+      <h2>&nbsp;Credentials</h2>
+      <span class="spacer"></span>
+      <span class="count">education &amp; certification</span>
+    </div>
+
+    <div class="two-up">
+      <div>
+        <h3>Certifications</h3>
+        <ul>
+          <li>Google Data Analytics Professional <span>Coursera · 2023</span></li>
+          <li>Python for Everybody <span>Coursera · 2022</span></li>
+          <li>Algorithmic Thinking <span>Quera · 2022</span></li>
+          <li>Version Control with Git <span>Quera · 2022</span></li>
+          <li>IEEE Data Science <span>Univ. of Tehran · 2020</span></li>
+          <li>Applied Artificial Intelligence <span>Univ. of Tehran · 2019</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <ul>
+          <li>Francisation, Études de Langue Française <span>CEA LaSalle · 2023–24</span></li>
+          <li>M.Sc. Telecommunications Engineering <span>Azad University · 2015–21</span></li>
+          <li>B.Sc. Telecommunication Engineering <span>Urmia University · 2002–07</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────────────────────────── -->
+  <section class="section" id="contact">
+    <div class="section-head">
+      <span class="tab">Section G</span>
+      <h2>&nbsp;Get in touch</h2>
+      <span class="spacer"></span>
+      <span class="count">Montréal, QC</span>
+    </div>
+
+    <div class="sheet contact" style="margin-top:20px">
+      <h2>Open to <mark>new work</mark>.</h2>
+      <p>If you are building something where correctness and care matter, I would like to hear about it. English, French or Persian.</p>
+      <div class="hero-actions">
+        <a class="btn btn--fill" href="mailto:jafari.nariman@gmail.com">jafari.nariman@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/narimanjafari/">LinkedIn</a>
+        <a class="btn" href="https://github.com/snowholt">GitHub</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="colophon">
+    <span>© 2026 NARIMAN JAFARI · MONTRÉAL, QC</span>
+    <span>SET IN BRICOLAGE GROTESQUE &amp; SPACE MONO · <b>NO TRACKING BEYOND ANALYTICS</b></span>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
