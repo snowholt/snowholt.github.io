@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Nariman Jafari">
+  <rect width="100" height="100" rx="20" fill="#D6236B"/>
+  <rect x="12" y="0" width="3.5" height="100" fill="#FBF2F1" opacity="0.55"/>
+  <path d="M22,78 L22,22 L38,22 L62,58 L62,22 L78,22 L78,78 L62,78 L38,42 L38,78 Z" fill="#FBF2F1"/>
+</svg>
