@@ -44,6 +44,50 @@
   if (media.addEventListener) media.addEventListener('change', onSystemChange);
   else if (media.addListener) media.addListener(onSystemChange);
 
+  /* ---- Reveal sections as they scroll into view -------------------------- */
+
+  /* Progressive enhancement: the class that hides these elements is only ever
+     added from here, so a visitor with JS disabled sees the full page. */
+  var wantsMotion = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (wantsMotion && 'IntersectionObserver' in window) {
+    root.classList.add('is-animated');
+
+    /* Groups reveal together with a short stagger; the hero is excluded on
+       purpose so the first paint is never gated on a transition. */
+    var groups = [
+      '.section-head', '.section-note', '.record', '.card',
+      '.data-sheet', '.two-up > div', '.contact'
+    ];
+
+    var targets = [];
+    groups.forEach(function (selector) {
+      var found = Array.prototype.slice.call(document.querySelectorAll(selector));
+      found.forEach(function (el, i) {
+        el.classList.add('reveal');
+        el.style.setProperty('--stagger', Math.min(i, 4));
+        targets.push(el);
+      });
+    });
+
+    var reveal = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-in');
+        reveal.unobserve(entry.target);   /* plays once, never on scroll back */
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+
+    targets.forEach(function (el) { reveal.observe(el); });
+
+    /* Anything already on screen at load should not wait for a scroll. */
+    requestAnimationFrame(function () {
+      targets.forEach(function (el) {
+        if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('is-in');
+      });
+    });
+  }
+
   /* ---- Mark the section currently in view ------------------------------- */
 
   var links = Array.prototype.slice.call(

@@ -301,3 +301,19 @@ a{color:inherit}
   .masthead,.theme-toggle,.hero-actions{display:none}
   .sheet{box-shadow:none}
 }
+
+/* ── Scroll reveal ─────────────────────────────────────────────────────────
+   `is-animated` is set by app.js only when JS runs and the visitor has not
+   asked for reduced motion, so with JS off every element renders normally.
+   Transform and opacity only — both composite on the GPU, so nothing here
+   triggers layout during a scroll. The hero is deliberately excluded: it is
+   the largest paint on the page and should not wait on a transition. */
+.is-animated .reveal{
+  opacity:0;
+  transform:translateY(14px);
+  transition:opacity .55s cubic-bezier(.22,.61,.36,1),
+             transform .55s cubic-bezier(.22,.61,.36,1);
+  transition-delay:calc(var(--stagger,0) * 70ms);
+  will-change:opacity,transform;
+}
+.is-animated .reveal.is-in{opacity:1;transform:none;will-change:auto}
